@@ -21,12 +21,20 @@ background-color: black;
 .person_info{
 
 }
+
 .field{
   font-weight: bold;
   font-style: underline;
 }
 .person_img{
  width: 150px; 
+}
+
+.bottommenu{
+   text-align: center; 
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+   font-size: 0.6em;
 }
 .chaptername1{
  text-align: center; 
@@ -67,7 +75,7 @@ tw-sidebar tw-icon.undo {
 .storylinks{
   font-size: 0.875em;
   font-variant: small-caps;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Стартовый экран" tags="" position="381,4" size="100,100">{(set:$storyname to &quot;Vampiress&quot;)
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Стартовый экран" tags="" position="387,8" size="100,100">{(set:$storyname to &quot;Vampiress&quot;)
 (set:$levelname to &quot;Глава 1. Новое начало&quot;)
 
 (set:$repo_georg to 70)
@@ -106,25 +114,25 @@ tw-sidebar tw-icon.undo {
 &lt;div class=&quot;storyname&quot;&gt;† $storyname †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;
 &lt;p class=&quot;story&quot;&gt;Тут должно быть какое-то крутое и очень интересное описание, чтобы всем было любопытно, что же будет дальше. Но пока я его не придумала, довольствуемся этой скучнейшей заглушкой. Миру мир.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;storylinks&quot;&gt;[(link: &quot;Начать&quot;)[(goto: $levelname)]]&lt;/div&gt;}</tw-passagedata><tw-passagedata pid="2" name="Глава 1. Новое начало" tags="hour2" position="387,124" size="100,100">(set:$pasname to &quot;Глава 1. Новое начало&quot;)&lt;div class=&quot;chaptername&quot;&gt;† $levelname †&lt;/div&gt;
+&lt;/div&gt;}
+&lt;div class=&quot;storylinks&quot;&gt;[(link: &quot;Начать&quot;)[(goto: $levelname)]]   †   [(link: &quot;Загрузить сохранение&quot;)[(load-game: &quot;Slot A&quot;)]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Глава 1. Новое начало" tags="hour2" position="387,124" size="100,100">(set:$pasname to &quot;Глава 1. Новое начало&quot;)&lt;div class=&quot;chaptername&quot;&gt;† $levelname †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;story&quot;&gt;Ты проснулась возле реки в не знакомой тебе пещере. Рядом с тобой сидит парень с закрытыми глазами. Спит?&lt;/p&gt;&lt;/div&gt;
 &lt;div class=&quot;storylinks&quot;&gt;[[Встать -&gt;Глава 1. Новое начало. Эмма встаёт]]
 [[Разбудить парня -&gt;Глава 1. Новое начало. Эмма будит парня]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Глава 1. Новое начало. Эмма ничего не помнит" tags="hour2" position="388,325" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Эмма ничего не помнит&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Глава 1. Новое начало. Эмма ничего не помнит" tags="hour2" position="388,325" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Эмма ничего не помнит&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;Тебя обратили в вампира.&lt;/p&gt;
 &lt;p class=&quot;dialog&quot;&gt;Парень поднялся на ноги и протянул тебе руку.&lt;/p&gt;
 &lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;Пойдём. Нам надо идти в вампирский дом. Тут для тебя пока опасно.&lt;/p&gt;
 &lt;/div&gt;}
 &lt;div class=&quot;storylinks&quot;&gt;[[Кто ты? -&gt;Глава 1. Новое начало. Пытаемся узнать имя парня]]
 [[Молча пойти за парнем. -&gt;Глава 1. Новое начало. Эмма идет в дом Рихтер]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Глава 1. Новое начало. Эмма идет в дом Рихтер" tags="hour2" position="486,488" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Эмма идет в дом Рихтер&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Глава 1. Новое начало. Эмма идет в дом Рихтер" tags="hour2" position="486,488" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Эмма идет в дом Рихтер&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;dialog&quot;&gt;Вы поднимаетесь на мост и по дороге доходите до большого особняка.&lt;/p&gt;
 &lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;Это дом вампирской семьи Рихтер. Пойдем познакомимся со всеми.&lt;/p&gt;
 &lt;/div&gt;}
 &lt;div class=&quot;storylinks&quot;&gt;(if:$david is 0)[[[А ты тоже вампир? -&gt;Глава 1. Новое начало. Парень вампир?]]]
 [[Молча пойти за парнем. -&gt;Глава 1. Новое начало. Входим в дом Рихтер]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Глава 1. Новое начало. Эмма спрашивает, кто её укусил" tags="" position="1203,1027" size="100,100">&lt;div class=&quot;chaptername1&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;&lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;story&quot;&gt;Вильгельм говорит, что этого они не знают. Ни укушенный, ни другие вампиры не могут определить, кто кого укусил. А из семьи никто не сознаётся.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Глава 1. Новое начало. Эмма спрашивает, кто её укусил" tags="" position="1203,1027" size="100,100">&lt;div class=&quot;chaptername1&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;&lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;story&quot;&gt;Вильгельм говорит, что этого они не знают. Ни укушенный, ни другие вампиры не могут определить, кто кого укусил. А из семьи никто не сознаётся.&lt;/p&gt;&lt;/div&gt;
 &lt;div class=&quot;storylinks&quot;&gt;[[Глава 1. Новое начало. Эмма спрашивает, есть ли еще какие-то вампиры в округе]]
 [[Глава 1. Новое начало. Эмма спрашивает, что её ждёт дальше]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Глава 1. Новое начало. Эмма спрашивает, почему ей обязательно быть в семье" tags="" position="980,1094" size="100,100">&lt;div class=&quot;chaptername1&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;&lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;story&quot;&gt;Вильгельм говорит, что в семье ей будет проще выжить, ведь сейчас она ничего не помнит. В городе обитают охотники на вампиров, которые могут ей навредить.&lt;/p&gt;&lt;/div&gt;
 &lt;div class=&quot;storylinks&quot;&gt;[[Глава 1. Новое начало. Эмма спрашивает, есть ли еще какие-то вампиры в округе]]
@@ -140,7 +148,7 @@ tw-sidebar tw-icon.undo {
 &lt;div class=&quot;storytext&quot;&gt;&lt;details&gt;	&lt;summary&gt;Пока ничего нет.&lt;/summary&gt;	Скрытый текст!&lt;/details&gt;
 &lt;/div&gt;
 &lt;div class=&quot;storylinks&quot;&gt;[(link: &quot;Назад&quot;)[(goto: $pasname)]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   Инвентарь   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;}</tw-passagedata><tw-passagedata pid="12" name="Служебный" tags="" position="77,119" size="100,100">(set:$storyname to &quot;Vampiress&quot;)
+&lt;div class=&quot;chaptername1&quot;&gt;†   Инвентарь   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;}</tw-passagedata><tw-passagedata pid="12" name="Служебный" tags="" position="77,119" size="100,100">(set:$storyname to &quot;Vampiress&quot;)
 (set:$levelname to &quot;Глава 1. Новое начало&quot;)
 (set:$repo_georg to 70)
 (set:$repo_klaus to -50)
@@ -175,41 +183,73 @@ tw-sidebar tw-icon.undo {
 &lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;story&quot;&gt;Ты попыталась встать, но тело так болело, что сделать это не удалось. Ты нечаянно задела парня, и он вздрогнул и открыл глаза.&lt;/p&gt;
 &lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;О, ты проснулась. Помнишь, что с тобой случилось?&lt;/p&gt;&lt;/div&gt;}
 &lt;div class=&quot;storylinks&quot;&gt;[[Нет... -&gt;Глава 1. Новое начало. Эмма ничего не помнит]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Глава 1. Новое начало. Эмма будит парня" tags="" position="255,229" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Эмма будит парня&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Глава 1. Новое начало. Эмма будит парня" tags="" position="255,229" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Эмма будит парня&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;
 &lt;p class=&quot;dialog&quot;&gt;Ты слегка коснулась его руки. Парень вздрогнул от этого и открыл глаза.&lt;/p&gt;
 &lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;О, ты проснулась. Помнишь, что с тобой случилось?&lt;/p&gt;
 &lt;/div&gt;}
 &lt;div class=&quot;storylinks&quot;&gt;[[Нет... -&gt;Глава 1. Новое начало. Эмма ничего не помнит]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Глава 1. Новое начало. Пытаемся узнать имя парня" tags="" position="155,397" size="100,100">{(set:$david to 1)(set:$pasname to &quot;Глава 1. Новое начало. Пытаемся узнать имя парня&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Глава 1. Новое начало. Пытаемся узнать имя парня" tags="" position="223,391" size="100,100">{(set:$david to 2)(set:$pasname to &quot;Глава 1. Новое начало. Пытаемся узнать имя парня&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;Я - Давид Рихтер. Вампир. Я не причиню вреда. Но тут снуют охотники на вампиров, пойдём.&lt;/p&gt;
 &lt;/div&gt;}
 &lt;div class=&quot;storylinks&quot;&gt;[[Ты меня укусил? -&gt;Глава 1. Новое начало. Давид ли укусил Эмму?]]
 [[Молча пойти за парнем. -&gt;Глава 1. Новое начало. Эмма идет в дом Рихтер]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Глава 1. Новое начало. Давид ли укусил Эмму?" tags="" position="163,531" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Давид ли укусил Эмму?&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Глава 1. Новое начало. Давид ли укусил Эмму?" tags="" position="211,537" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Давид ли укусил Эмму?&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;
 &lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;Нет, не я. Я только нашёл тебя под мостом и оттащил сюда. Ты бы сгорела на солнце. Пойдём уже, остальное обсудим в доме.&lt;/p&gt;
 &lt;/div&gt;}
 &lt;div class=&quot;storylinks&quot;&gt;[[Пойти с ним. -&gt;Глава 1. Новое начало. Эмма идет в дом Рихтер]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Дневник" tags="" position="1112,355" size="100,100">{&lt;div class=&quot;chaptername&quot;&gt;† Мои заметки †&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Дневник" tags="" position="1112,355" size="100,100">{&lt;div class=&quot;chaptername&quot;&gt;† Мои заметки †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;[[► Знакомства]]
 &lt;/div&gt;
 &lt;div class=&quot;storylinks&quot;&gt;[(link: &quot;Назад&quot;)[(goto: $pasname)]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   Заметки Эммы   †&lt;/div&gt;}</tw-passagedata><tw-passagedata pid="25" name="► Знакомства" tags="" position="1276,361" size="100,100">&lt;div class=&quot;chaptername&quot;&gt;† Мои заметки †&lt;/div&gt;&lt;details&gt;	&lt;summary&gt;(if:$david is 0)[Неизвестный](else:)[Давид Рихтер]&lt;/summary&gt;	&lt;table class=&quot;person_info&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;https://sun9-67.userapi.com/impf/higY-8VjB7cI5TXlbZm7bTYwREm4wODkJ5mNzg/iwxwb2pjWJk.jpg?size=332x462&amp;quality=95&amp;sign=7a67c2938bef31f25553c9a6f8dcae66&amp;type=album&quot;  class=&quot;person_img&quot;/&gt;&lt;/td&gt;&lt;td class=&quot;person_description&quot;&gt;&lt;p class=&quot;description&quot;&gt;Вампир(if:$david is 0)[?]
+&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   Заметки   †&lt;/div&gt;}</tw-passagedata><tw-passagedata pid="25" name="► Знакомства" tags="" position="1276,391" size="100,100">&lt;div class=&quot;chaptername&quot;&gt;† Мои заметки †&lt;/div&gt;&lt;div class=&quot;storytext&quot;&gt;&lt;details&gt;	&lt;summary&gt;(if:$david &lt; 2)[Неизвестный](else:)[Давид Рихтер]&lt;/summary&gt;	&lt;table class=&quot;person_info&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;https://sun9-67.userapi.com/impf/higY-8VjB7cI5TXlbZm7bTYwREm4wODkJ5mNzg/iwxwb2pjWJk.jpg?size=332x462&amp;quality=95&amp;sign=7a67c2938bef31f25553c9a6f8dcae66&amp;type=album&quot;  class=&quot;person_img&quot;/&gt;&lt;/td&gt;&lt;td class=&quot;person_description&quot;&gt;&lt;p class=&quot;description&quot;&gt;Вампир(if:$david is 0)[?]
 Первый, кого я увидела, когда проснулась. Не знаю, он меня обратил или нет.
 
 &lt;span class=&quot;field&quot;&gt;Отношения:&lt;/span&gt; не выглядит опасным&lt;/p&gt;&lt;/p&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/details&gt;&lt;div class=&quot;storylinks&quot;&gt;[[Назад -&gt;Дневник]]&lt;/div&gt;&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   Заметки Эммы   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Глава 1. Новое начало. Парень вампир?" tags="" position="337,608" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Парень вампир?&quot;)(set:$david to 1)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
-&lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;Да, я вампир. Меня зовут Давид Рихтер. Я бы тебя сюда не повёл, если бы был человеком.&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/details&gt;(if:$willhelm is 1)[&lt;details&gt;	&lt;summary&gt;Вильгельм Рихтер&lt;/summary&gt;	&lt;table class=&quot;person_info&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;https://sun9-67.userapi.com/impf/higY-8VjB7cI5TXlbZm7bTYwREm4wODkJ5mNzg/iwxwb2pjWJk.jpg?size=332x462&amp;quality=95&amp;sign=7a67c2938bef31f25553c9a6f8dcae66&amp;type=album&quot;  class=&quot;person_img&quot;/&gt;&lt;/td&gt;&lt;td class=&quot;person_description&quot;&gt;&lt;p class=&quot;description&quot;&gt;Вампир
+Глава семьи Рихтер.
+
+&lt;span class=&quot;field&quot;&gt;Отношения:&lt;/span&gt; не выглядит опасным&lt;/p&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/details&gt;]&lt;/div&gt;&lt;div class=&quot;storylinks&quot;&gt;[[Назад -&gt;Дневник]]&lt;/div&gt;&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   Заметки   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Глава 1. Новое начало. Парень вампир?" tags="" position="337,608" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Парень вампир?&quot;)(set:$david to 1)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Парень: &lt;/span&gt;Да, я вампир. Я бы тебя сюда не повёл, если бы был человеком.&lt;/p&gt;
 &lt;/div&gt;}
 &lt;div class=&quot;storylinks&quot;&gt;[[Молча пойти за парнем. -&gt;Глава 1. Новое начало. Входим в дом Рихтер]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Глава 1. Новое начало. Входим в дом Рихтер" tags="" position="505,702" size="100,100">{(set:$richterhouse to 1)(set:$willhelm to 1)(set:$pasname to &quot;Глава 1. Новое начало. Входим в дом Рихтер&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Глава 1. Новое начало. Входим в дом Рихтер" tags="" position="571,630" size="100,100">{(set:$richterhouse to 1)(set:$richterfamily to 1)(set:$willhelm to 1)(set:$pasname to &quot;Глава 1. Новое начало. Входим в дом Рихтер&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
 &lt;div class=&quot;storytext&quot;&gt;&lt;p class=&quot;dialog&quot;&gt;Вы вошли в дом. Пройдя по коридору ты попала в большой холл с камином и несколькими диванами. В центре стоял мужчина. Ждал тебя.&lt;/p&gt;
-&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Мужчина: &lt;/span&gt;Добро пожаловать. Я Вильгельм Рихтер.&lt;/p&gt;
+&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Мужчина: &lt;/span&gt;Добро пожаловать. Я Вильгельм Рихтер, глава вампирского дома. Тебя только обратили в вампира, поэтому тебе нужно пока примкнуть к нашей семье.&lt;/p&gt;
 &lt;/div&gt;}
-&lt;div class=&quot;storylinks&quot;&gt;(if:$david is 0)[[[А ты тоже вампир? -&gt;Глава 1. Новое начало. Парень вампир?]]]
-[[Молча пойти за парнем. -&gt;Глава 1. Новое начало. Входим в дом Рихтер]]&lt;/div&gt;
-&lt;div class=&quot;chaptername1&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки Эммы&quot;)[(goto: &quot;Дневник&quot;)]]   †&lt;/div&gt;</tw-passagedata></tw-storydata>
+&lt;div class=&quot;storylinks&quot;&gt;[[- Вы знаете, кто меня обратил? -&gt;Глава 1. Новое начало. Знает ли Вильгельм, кто обратил Эмму?]]
+[[- Почему мне обязательно быть в семье? -&gt;Глава 1. Новое начало. Зачем Эмме быть в семье Рихтер]]&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Ошибка :(]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Сохранить" tags="" position="1110,479.6666564941406" size="100,100">(link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Не сохранено :(]]</tw-passagedata><tw-passagedata pid="29" name="Загрузить" tags="" position="1110,591.6666564941406" size="100,100">(link: &quot;Load Slot A?&quot; )[
+  		(load-game: &quot;Slot A&quot;)
+	]</tw-passagedata><tw-passagedata pid="30" name="Глава 1. Новое начало. Знает ли Вильгельм, кто обратил Эмму?" tags="" position="459,762" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Знает ли Вильгельм, кто обратил Эмму?&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;storytext&quot;&gt;
+&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Вильгельм: &lt;/span&gt;Нет, я не знаю. Это ещё предстоит выяснить. Завтра приедут вампиры из главной семьи, мы это обсудим.&lt;/p&gt;
+&lt;/div&gt;}
+&lt;div class=&quot;storylinks&quot;&gt;[[- Что за главная семья? -&gt;Глава 1. Новое начало. Что такое главная семья?]]
+[[- Почему мне обязательно быть в вашей семье? Я вас впервые вижу. -&gt;Глава 1. Новое начало. Зачем Эмме быть в семье Рихтер]]&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Ошибка :(]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Глава 1. Новое начало. Зачем Эмме быть в семье Рихтер" tags="" position="663,756" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Зачем Эмме быть в семье Рихтер&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;storytext&quot;&gt;
+&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Вильгельм *(вздохнув)*: &lt;/span&gt;Причин много. Самая простая: здесь безопаснее, чем на улице. Сейчас ты беззащитна, поэтому лучше держаться с нами. А так - мы должны разобраться, кто тебя обратил, чтобы потом решить, как с тобой быть.&lt;/p&gt;
+&lt;/div&gt;}
+&lt;div class=&quot;storylinks&quot;&gt;[[- Почему вы решаете, что со мной будет, а не я? -&gt;Глава 1. Новое начало. Почему судьбу новых вампиров решают вампирские семьи?]]
+[[- Что такого опасного меня ждёт, если я не буду с вами? -&gt;Глава 1 Новое начало. Что опасного за пределами дома Рихтер?]]
+[[- Я всё поняла. -&gt;Глава 1 Новое начало. Конец диалога с Вильгельмом 1]]&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Ошибка :(]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Глава 1. Новое начало. Что такое главная семья?" tags="" position="425,902" size="100,100">{(set:$metzgerfamily to 1)(set:$pasname to &quot;Глава 1. Новое начало. Что такое главная семья?&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;storytext&quot;&gt;
+&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Вильгельм: &lt;/span&gt;Изначально в этих землях была одна семья Мецгер. Когда вампиров в ней стало слишком много, я и еще несколько вампиров отделились в семью Рихтер. Но Мецгерам мы подчиняемся.&lt;/p&gt;
+&lt;/div&gt;}
+&lt;div class=&quot;storylinks&quot;&gt;[[- А зачем обсуждать новых вампиров с главной семьей? -&gt;Глава 1. Новое начало. Зачем обсуждать новичков с главной семьей?]]
+[[- Я всё поняла. -&gt;Глава 1 Новое начало. Конец диалога с Вильгельмом 1]]&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Ошибка :(]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Глава 1. Новое начало. Почему судьбу новых вампиров решают вампирские семьи?" tags="" position="693,890" size="100,100">{(set:$pasname to &quot;Глава 1. Новое начало. Почему судьбу новых вампиров решают вампирские семьи?&quot;)&lt;div class=&quot;chaptername&quot;&gt;†   $storyname   †   $levelname   †&lt;/div&gt;
+&lt;div class=&quot;storytext&quot;&gt;
+&lt;p class=&quot;dialog&quot;&gt;&lt;span class=&quot;field&quot;&gt;Вильгельм: &lt;/span&gt;Причин много. Самая простая: здесь безопаснее, чем на улице. Сейчас ты беззащитна, поэтому лучше держаться с нами. А так - мы должны разобраться, кто тебя обратил, чтобы потом решить, как с тобой быть.&lt;/p&gt;
+&lt;/div&gt;}
+&lt;div class=&quot;storylinks&quot;&gt;[[- Почему вы решаете, что со мной будет, а не я? -&gt;Глава 1. Новое начало. Почему судьбу новых вампиров решают вампирские семьи?]]
+[[- Что такого опасного меня ждёт, если я не буду с вами? -&gt;Глава 1 Новое начало. Что опасного за пределами дома Рихтер?]]
+[[- Поняла. -&gt;Глава 1 Новое начало. Конец диалога с Вильгельмом 1]]&lt;/div&gt;
+&lt;div class=&quot;bottommenu&quot;&gt;†   [(link: &quot;Инвентарь&quot;)[(goto: &quot;Инвентарь&quot;)]]   †   [(link: &quot;Заметки&quot;)[(goto: &quot;Дневник&quot;)]]   †   (link:&quot;Сохранить&quot;)[(if:(save-game:&quot;Slot A&quot;))[(if: (saved-games:) contains &quot;Slot A&quot;)[Сохранено]](else: )[Ошибка :(]]   †&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Глава 1 Новое начало. Что опасного за пределами дома Рихтер?" tags="" position="837,868" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="35" name="Глава 1 Новое начало. Конец диалога с Вильгельмом 1" tags="" position="559,1124" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="36" name="Глава 1. Новое начало. Зачем обсуждать новичков с главной семьей?" tags="" position="381,1034" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
